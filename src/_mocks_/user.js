@@ -1,7 +1,7 @@
-import faker from 'faker';
-import { sample } from 'lodash';
+import faker from "faker";
+import { sample } from "lodash";
 // utils
-import { mockImgAvatar } from '../utils/mockImages';
+import { mockImgAvatar } from "../utils/mockImages";
 
 // ----------------------------------------------------------------------
 
@@ -11,8 +11,8 @@ const users = [...Array(24)].map((_, index) => ({
   name: faker.name.findName(),
   company: faker.company.companyName(),
   isVerified: faker.datatype.boolean(),
-  status: sample(['active', 'banned']),
-  role: sample(['Super Admin', 'Admin', 'Tester', 'Developer'])
+  status: sample(["active", "banned"]),
+  role: sample(["Super Admin", "Admin", "Tester", "Developer"])
 }));
 
 export default users;

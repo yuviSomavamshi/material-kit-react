@@ -1,20 +1,20 @@
-import { Icon } from '@iconify/react';
-import plusFill from '@iconify/icons-eva/plus-fill';
-import { Link as RouterLink } from 'react-router-dom';
+import { Icon } from "@iconify/react";
+import plusFill from "@iconify/icons-eva/plus-fill";
+import { Link as RouterLink } from "react-router-dom";
 // material
-import { Grid, Button, Container, Stack, Typography } from '@mui/material';
+import { Grid, Button, Container, Stack, Typography } from "@mui/material";
 // components
-import Page from '../components/Page';
-import { BlogPostCard, BlogPostsSort, BlogPostsSearch } from '../components/_dashboard/blog';
+import Page from "../components/Page";
+import { BlogPostCard, BlogPostsSort, BlogPostsSearch } from "../components/_dashboard/blog";
 //
-import POSTS from '../_mocks_/blog';
+import POSTS from "../_mocks_/blog";
 
 // ----------------------------------------------------------------------
 
 const SORT_OPTIONS = [
-  { value: 'latest', label: 'Latest' },
-  { value: 'popular', label: 'Popular' },
-  { value: 'oldest', label: 'Oldest' }
+  { value: "latest", label: "Latest" },
+  { value: "popular", label: "Popular" },
+  { value: "oldest", label: "Oldest" }
 ];
 
 // ----------------------------------------------------------------------
@@ -27,12 +27,7 @@ export default function Blog() {
           <Typography variant="h4" gutterBottom>
             Blog
           </Typography>
-          <Button
-            variant="contained"
-            component={RouterLink}
-            to="#"
-            startIcon={<Icon icon={plusFill} />}
-          >
+          <Button variant="contained" component={RouterLink} to="#" startIcon={<Icon icon={plusFill} />}>
             New Post
           </Button>
         </Stack>
