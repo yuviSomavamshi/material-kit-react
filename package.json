@@ -10,7 +10,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint --ext .js,.jsx ./src",
-    "lint:fix": "eslint --fix --ext .js,.jsx ./src"
+    "lint:fix": "eslint --fix --ext .js,.jsx ./src",
+    "upgrade": "ncu -u --packageFile package.json",
+    "prettify": "prettier --ignore-path \"./.prettierignore\" --write \"./**/*.{js,jsx,json,ts.tsx}\""
   },
   "eslintConfig": {
     "extends": [
