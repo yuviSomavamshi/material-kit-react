@@ -64,8 +64,9 @@
     "prettier/prettier": [
       2,
       {
-        "printWidth": 100,
-        "singleQuote": true,
+        "printWidth": 150,
+        "semi": true,
+        "singleQuote": false,
         "trailingComma": "none",
         "tabWidth": 2
       }

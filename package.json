@@ -53,7 +53,7 @@
     "date-fns": "^2.27.0",
     "faker": "^5.5.3",
     "formik": "^2.2.9",
-    "framer-motion": "^5.4.5",
+    "framer-motion": "^4.1.17",
     "history": "^5.1.0",
     "lodash": "^4.17.21",
     "numeral": "^2.0.6",
